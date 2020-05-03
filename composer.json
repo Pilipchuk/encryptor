@@ -1,0 +1,33 @@
+{
+  "name": "darkdevlab/encryptor",
+  "version":"1.0.0",
+  "type": "library",
+  "description": "Encryption component. Support AES, BF, CAMELLIA, CAST5, DES, DESX, GOST, RC2 and RC4 algorithms",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vladimir Pilipchuk",
+      "email": "vovapilipchuk@gmail.com"
+    }
+  ],
+  "keywords": ["crypt", "encryption"],
+  "require":{
+    "php": ">=7.3",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "darkdevlab/enum": "^2.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "9.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "DarkDevLab\\Encryptor\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DarkDevLab\\Encryptor\\Tests\\": "tests/"
+    }
+  }
+}
