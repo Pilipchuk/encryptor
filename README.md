@@ -1,6 +1,11 @@
 ENCRYPTOR
 =========
 
+### INSTALLATION:
+```bash
+composer require darkdevlab/encryptor
+```
+
 Supported cipher algorithms:
 ```php
 use DarkDevLab\Encryptor\Cipher;
