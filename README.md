@@ -105,7 +105,7 @@ USAGE
 use DarkDevLab\Encryptor\OpenSslEncryptor;
 use DarkDevLab\Encryptor\Cipher;
 
-$encryptor = new OpenSslEncryptor('secret_key', Cipher::get(AES_256_CBC));
+$encryptor = new OpenSslEncryptor('secret_key', Cipher::get(Cipher::AES_256_CBC));
 $encryptedString = $encryptor->encrypt('{"data":"to", "encryption":12345}');
 $decryptedString = $encryptor->decrypt($encryptedString);
 ```
